@@ -23,7 +23,7 @@ Password: quest123
 | **Page / Feature** | **Role** | **Success / Fail** | **Reason of Fail** |
 |:----|:----:|:----:|:----:|
 | /resources    | Quest | ✅| - |
-| /reservation   | Quest | ❌ | /profile |
+| /reservation   | Quest | ❌ | User must be over 15 years old to make a reservation |
 | /profile    | ❌ *1 | ❌ *2 | ✅ *3 |
 
 

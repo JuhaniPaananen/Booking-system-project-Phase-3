@@ -20,17 +20,12 @@ Quest 1:
 Account: quest1@gmail.com
 Password: quest123
 
-| **Page / Feature** | **Role** | **Success / Fail** | **Reason** |
+| **Page / Feature** | **Role** | **Success / Fail** | **Reason of Fail** |
 |:----|:----:|:----:|:----:|
-| `/` (index)                | | | |
-| └─ View resource form      | ❌ | ✅ | ✅ note added |
-| └─ Create new resource     | ❌ *1 | ❌ *2 | ✅ *3 |
+| /resources    | Quest | ✅| - |
+| /reservation   | Quest | ❌ | /profile |
+| /profile    | ❌ *1 | ❌ *2 | ✅ *3 |
 
-| **Page / Feature** | **Guest** | **Reserver** | **Administrator** |
-|:----|:----:|:----:|:----:|
-| `/` (index)                | | | |
-| └─ View resource form      | ❌ | ✅ | ✅ note added |
-| └─ Create new resource     | ❌ *1 | ❌ *2 | ✅ *3 |
 
 # 4. Second testing technique: ZAP
 

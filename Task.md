@@ -16,6 +16,10 @@ make reservations
 ...
 Fill in the table as the testing progresses.
 
+Quest 1:
+Account: quest1@gmail.com
+Password: quest123
+
 | **Page / Feature** | **Guest** | **Reserver** | **Administrator** |
 |:----|:----:|:----:|:----:|
 | `/` (index)                | | | |

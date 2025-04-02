@@ -6,8 +6,8 @@
 
 
 Tasks in order:
-2. Create a new page on Github (markdown) and add the following table to the page
-3. First testing technique: Browser
+# 2. Create a new page on Github (markdown) and add the following table to the page
+# 3. First testing technique: Browser
 
 Familiarize yourself with the functionality of the version as comprehensively as possible.
 create users with different roles
@@ -22,7 +22,7 @@ Fill in the table as the testing progresses.
 | └─ View resource form      | ❌ | ✅ | ✅ note added |
 | └─ Create new resource     | ❌ *1 | ❌ *2 | ✅ *3 |
 
-4. Second testing technique: ZAP
+# 4. Second testing technique: ZAP
 
 Check what kind of alerts are found in the version.
 Note

@@ -9,36 +9,31 @@ Tasks in order:
 # 2. Create a new page on Github (markdown) and add the following table to the page
 # 3. First testing technique: Browser
 
-Familiarize yourself with the functionality of the version as comprehensively as possible.
-create users with different roles
-make reserveable resources
-make reservations
-...
-Fill in the table as the testing progresses.
+## Conclusion
+I created couple accounts to test functionality. Interesting found in this step was account age had to be 15, if wanted to make reservations.
+That is the particular reason for many accounts.
 
-Quest 1 Account:
+#### Quest 1 Account:
 Email: quest1@gmail.com
 Password: quest123
 
-Admin 1 Account:
+#### Admin 1 Account:
 Email: admin@gmail.com
 Password: admin123
 
-Admin 2 Account (wrongly chose admin using quest in email):
+#### Admin 2 Account (wrongly chose admin using quest in email):
 Email: quest2@gmail.com
 Password: quest123
 
+## Table
 | **Page / Feature** | **Role** | **Success / Fail** | **Reason of Fail** |
 |:----|:----:|:----:|:----:|
 | /resources    | Quest 1 | ✅| - |
 | /reservation   | Quest 1 | ❌ | User must be over 15 years old to make a reservation |
-| /profile    | Quest 1 | ❌ | Not Found |
 | /resources    | Admin 1| ✅| - |
 | /reservation   | Admin 1 | ❌ | User must be over 15 years old to make a reservation |
-| /profile    | Admin 1 | ❌ | Not Found |
 | /resources    | Admin 2 | ✅| - |
 | /reservation   | Admin2 | ✅ | - |
-| /profile    | Admin 2 | ❌ | Not Found |
 
 
 # 4. Second testing technique: ZAP

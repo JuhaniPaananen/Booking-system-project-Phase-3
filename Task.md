@@ -17,6 +17,10 @@ That is the particular reason for many accounts.
 Email: quest1@gmail.com
 Password: quest123
 
+#### Quest 2 Account:
+Email: realquest@gmail.com
+Password: quest123
+
 #### Admin 1 Account:
 Email: admin@gmail.com
 Password: admin123
@@ -30,6 +34,8 @@ Password: quest123
 |:----|:----:|:----:|:----:|
 | /resources    | Quest 1 | ✅| - |
 | /reservation   | Quest 1 | ❌ | User must be over 15 years old to make a reservation |
+| /resources    | Quest 2 | ✅| - |
+| /reservation   | Quest 2 | ✅ | - |
 | /resources    | Admin 1| ✅| - |
 | /reservation   | Admin 1 | ❌ | User must be over 15 years old to make a reservation |
 | /resources    | Admin 2 | ✅| - |

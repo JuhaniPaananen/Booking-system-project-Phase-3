@@ -1,13 +1,4 @@
-| **Page / Feature** | **Guest** | **Reserver** | **Administrator** |
-|:----|:----:|:----:|:----:|
-| `/` (index)                | | | |
-| └─ View resource form      | ❌ | ✅ | ✅ note added |
-| └─ Create new resource     | ❌ *1 | ❌ *2 | ✅ *3 |
-
-
-Tasks in order:
-# 2. Create a new page on Github (markdown) and add the following table to the page
-# 3. First testing technique: Browser
+# First testing technique: Browser
 
 ## Conclusion
 I created couple accounts to test functionality. Interesting found in this step was account age had to be 15, if wanted to make reservations.
@@ -43,7 +34,7 @@ Password: quest123
 | /reservation   | Admin2 | ✅ | - |
 
 
-# 4. Second testing technique: ZAP
+# Second testing technique: ZAP
 
 e8f96fa7-38e3-4ce3-9e8b-af5cbded9cal
 POST: register(birthdate,csrf_token,password,role,username)

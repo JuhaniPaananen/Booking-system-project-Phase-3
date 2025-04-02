@@ -11,13 +11,13 @@ Tasks in order:
 
 ## Conclusion
 I created couple accounts to test functionality. Interesting found in this step was account age had to be 15, if wanted to make reservations.
-That is the particular reason for many accounts.
+That is the particular reason for many accounts. Result is that both reserver and  can access 
 
-#### Quest 1 Account:
+#### Reserver 1 Account:
 Email: quest1@gmail.com
 Password: quest123
 
-#### Quest 2 Account:
+#### Reserver 2 Account:
 Email: realquest@gmail.com
 Password: quest123
 
@@ -32,10 +32,10 @@ Password: quest123
 ## Table
 | **Page / Feature** | **Role** | **Success / Fail** | **Reason of Fail** |
 |:----|:----:|:----:|:----:|
-| /resources    | Quest 1 | ✅| - |
-| /reservation   | Quest 1 | ❌ | User must be over 15 years old to make a reservation |
-| /resources    | Quest 2 | ✅| - |
-| /reservation   | Quest 2 | ✅ | - |
+| /resources    | Reserver 1 | ✅| - |
+| /reservation   | Reserver 1 | ❌ | User must be over 15 years old to make a reservation |
+| /resources    | Reserver 2 | ✅| - |
+| /reservation   | Reserver 2 | ✅ | - |
 | /resources    | Admin 1| ✅| - |
 | /reservation   | Admin 1 | ❌ | User must be over 15 years old to make a reservation |
 | /resources    | Admin 2 | ✅| - |

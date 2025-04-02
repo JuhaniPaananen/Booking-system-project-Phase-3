@@ -20,13 +20,13 @@ Quest 1 Account:
 Email: quest1@gmail.com
 Password: quest123
 
-Quest 2 Account:
-Email: quest2@gmail.com
-Password: quest123
-
-Admin Account:
+Admin 1 Account:
 Email: admin@gmail.com
 Password: admin123
+
+Admin 2 Account (wrongly chose admin using quest in email):
+Email: quest2@gmail.com
+Password: quest123
 
 | **Page / Feature** | **Role** | **Success / Fail** | **Reason of Fail** |
 |:----|:----:|:----:|:----:|

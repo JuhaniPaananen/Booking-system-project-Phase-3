@@ -20,6 +20,12 @@ Quest 1:
 Account: quest1@gmail.com
 Password: quest123
 
+| **Page / Feature** | **Role** | **Success / Fail** | **Reason** |
+|:----|:----:|:----:|:----:|
+| `/` (index)                | | | |
+| └─ View resource form      | ❌ | ✅ | ✅ note added |
+| └─ Create new resource     | ❌ *1 | ❌ *2 | ✅ *3 |
+
 | **Page / Feature** | **Guest** | **Reserver** | **Administrator** |
 |:----|:----:|:----:|:----:|
 | `/` (index)                | | | |

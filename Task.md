@@ -33,12 +33,12 @@ Password: quest123
 | /resources    | Quest 1 | ✅| - |
 | /reservation   | Quest 1 | ❌ | User must be over 15 years old to make a reservation |
 | /profile    | Quest 1 | ❌ | Not Found |
-| /resources    | Quest 2 | ✅| - |
-| /reservation   | Quest 2 | ✅ | - |
-| /profile    | Quest 2 | ❌ | Not Found |
 | /resources    | Admin 1| ✅| - |
 | /reservation   | Admin 1 | ❌ | User must be over 15 years old to make a reservation |
 | /profile    | Admin 1 | ❌ | Not Found |
+| /resources    | Admin 2 | ✅| - |
+| /reservation   | Admin2 | ✅ | - |
+| /profile    | Admin 2 | ❌ | Not Found |
 
 
 # 4. Second testing technique: ZAP

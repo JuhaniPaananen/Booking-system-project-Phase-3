@@ -11,7 +11,7 @@ Tasks in order:
 
 ## Conclusion
 I created couple accounts to test functionality. Interesting found in this step was account age had to be 15, if wanted to make reservations.
-That is the particular reason for many accounts. Result is that both reserver and admin can access resources and reservations.
+That is the particular reason for many accounts. Result is that both reserver and admin can access resources and reservations. Tried to login from else where gets: Invalid CSRF Token. No matter, what account I tried.
 
 
 #### Reserver 1 Account:

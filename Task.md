@@ -16,15 +16,22 @@ make reservations
 ...
 Fill in the table as the testing progresses.
 
-Quest 1:
-Account: quest1@gmail.com
+Quest Account:
+Email: quest1@gmail.com
 Password: quest123
+
+Admin Account:
+Email: admin@gmail.com
+Password: admin123
 
 | **Page / Feature** | **Role** | **Success / Fail** | **Reason of Fail** |
 |:----|:----:|:----:|:----:|
 | /resources    | Quest | ✅| - |
 | /reservation   | Quest | ❌ | User must be over 15 years old to make a reservation |
-| /profile    | ❌ *1 | ❌ *2 | ✅ *3 |
+| /profile    | Quest | ❌ | Not Found |
+| /resources    | Admin| ✅| - |
+| /reservation   | Admin | ❌ | User must be over 15 years old to make a reservation |
+| /profile    | Admin | ❌ | Not Found |
 
 
 # 4. Second testing technique: ZAP

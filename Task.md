@@ -102,3 +102,5 @@ Yes as expected it does not return it, but I tried to put 3 and it returns the r
 http http://localhost:8000/api/reservations/3  
 ![image](https://github.com/user-attachments/assets/d2c294d4-f18d-44aa-8da8-f899b342eecd)
 
+# The final step of the test
+

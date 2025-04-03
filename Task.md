@@ -70,85 +70,21 @@ Pages listed to new list below. Most interesting find was /api/reservations did 
 
 # Third testing technique: wfuzz and http
 
-## What kind of pages can be found using common words?
+### What kind of pages can be found using common words?
 wfuzz -c -w /usr/share/wordlists/dirb/common.txt --hc 404 http://localhost:8000/FUZZ
 ![image](https://github.com/user-attachments/assets/33a421fe-0b7d-4717-8246-7064c1d00c2e)
 
+### Is there an API folder and pages under it?
+wfuzz -c -w /usr/share/wordlists/dirb/common.txt --hc 404 http://localhost:8000/api/FUZZ
+![image](https://github.com/user-attachments/assets/440b6b0e-347d-4ea3-94b3-c4f07f29d689)
 
+### Are there any pages in the reservations folder whose name is a number between 1-1000?
+wfuzz -c -z range,1-1000 --hc 404 http://localhost:8000/api/reservations/FUZZ
+![image](https://github.com/user-attachments/assets/032b3ede-48ab-46e7-b74f-d4e51f30f973)
 
-# Tips
-## 🧩 1. Web Page Structure
+### When the page is found, then what the page contains?
+http http://localhost:8000/api/reservations/1  
+![image](https://github.com/user-attachments/assets/1ceb2575-72f8-4791-86ca-becdedd82113)
+http http://localhost:8000/api/reservations/3  
+![image](https://github.com/user-attachments/assets/d2c294d4-f18d-44aa-8da8-f899b342eecd)
 
-A web application is typically divided into **URLs** (routes) and **HTTP methods** that define how users interact with the application.
-
-### Common structure:
-- **Public pages** (accessible without login)
-  - `/`
-  - `/login`
-  - `/register`
-- **Protected pages** (require authentication)
-  - `/resources`
-  - `/reservation`
-  - `/profile`
-- **Admin/privileged pages**
-  - `/admin/users`
-  - `/admin/settings`
-
----
-
-## 🛠 2. Typical Functionalities to Test
-
-| **Type**              | **Examples**                                 |
-|-----------------------|----------------------------------------------|
-| View content          | Dashboard, listings, read-only pages         |
-| Form submissions      | Login, registration, create/edit resources   |
-| Data modification     | Edit profiles, create reservations, delete   |
-| Privileged actions    | User management, access control, settings    |
-| API calls             | `/api/*` endpoints for frontend/backend      |
-
----
-
-## 🔐 3. What to Focus on in Authorization Testing
-
-### ✅ **Access Control Rules**
-- Can **unauthenticated users** (Guests) access protected pages?
-- Can **Reserver** role access Admin-only functions?
-- Are **API endpoints** enforcing role-based restrictions?
-
-### ✅ **Horizontal Privilege Escalation**
-- Can user A access or modify data of user B?
-  - e.g., `/api/reservations/1` or `/profile?id=5`
-
-### ✅ **Vertical Privilege Escalation**
-- Can a low-privilege user (e.g., Reserver) perform Admin actions?
-  - Submit forms to `/admin` routes
-  - Modify user roles via hidden parameters
-
----
-
-## 🔍 4. Testing Approach
-
-1. **Map pages & APIs**
-   - Use tools like **wfuzz**, **ffuf**, or **dirb** to discover hidden paths.
-   - Map both **GET** and **POST** endpoints.
-
-2. **Test as different roles**
-   - Guest (unauthenticated)
-   - Authenticated user (e.g., Reserver)
-   - Administrator
-
-3. **Inspect functions on each page**
-   - Buttons, forms, APIs, links
-   - Backend-side restrictions (not just hidden in UI)
-
----
-
-## 🎯 5. Goal of Authorization Testing
-
-- Ensure **least privilege** principle (users can only do what they should).
-- Detect **bypass vectors** (direct object references, hidden APIs).
-- Confirm both **frontend** and **backend** enforce authorization properly.
-
----
-
-> Tip: Combine **manual testing** and **automated fuzzing** for maximum coverage!

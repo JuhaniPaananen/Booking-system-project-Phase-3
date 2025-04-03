@@ -77,7 +77,7 @@ wfuzz -c -w /usr/share/wordlists/dirb/common.txt --hc 404 http://localhost:8000/
 ### Is there an API folder and pages under it?
 wfuzz -c -w /usr/share/wordlists/dirb/common.txt --hc 404 http://localhost:8000/api/FUZZ
 ![image](https://github.com/user-attachments/assets/440b6b0e-347d-4ea3-94b3-c4f07f29d689)
-Interestingly it does not see, that session is under api. Picture below shows it is under api.
+Interestingly it does not see, that session is under api. Picture below shows it is under api, but could be that it is not authorized to access it, what is the reason for 401.
 ![image](https://github.com/user-attachments/assets/dad6c91d-105d-491c-9b7f-8db573118580)
 
 

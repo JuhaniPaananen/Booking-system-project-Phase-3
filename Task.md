@@ -59,11 +59,13 @@ Save the ZAP report in markdown format.
 Fill in the table as the testing progresses.
 The test can find new pages, for example
 
-| **Page / Feature** | **Guest** | **Reserver** | **Administrator** |
+| **Page / Feature** | **Role** | **Success / Fail** | **Reason of Fail / Outcome** |
 |:----|:----:|:----:|:----:|
-| `/` (index)                | | | |
-| └─ View resource form      | ❌ | ✅ | ✅ note added |
-| └─ Create new resource     | ❌ *1 | ❌ *2 | ✅ *3 |
+| /api/resources    | Admin | ✅ | - |
+| /api/resou    | Admin | ✅ | - |
+
+
+
 
 # Tips
 ## 🧩 1. Web Page Structure

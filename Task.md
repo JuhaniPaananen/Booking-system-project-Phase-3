@@ -37,7 +37,16 @@ Password: quest123
 # Second testing technique: ZAP
 
 ## Conclusion
-Found some new pages using manual scan and spider. 
+Found some new pages using manual scan and spider like seen picture under. Also made couple reports, but include only best one.
+Pages listed to new list below. Report contains total of 4 alerts. One is authentication alert, that is made by account I used so it's nothing. Second is session, that is accessable by putting /api/session.
+
+
+
+# Alerts
+- No Anti CSRF Tokens
+- Authentication Request Identified
+- Session Management Response Identified
+- User Agent Fuzzer
 
 ![image](https://github.com/user-attachments/assets/b654b201-246a-4f5a-8ac8-d781c3f7b083)
 

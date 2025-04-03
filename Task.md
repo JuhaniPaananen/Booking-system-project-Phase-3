@@ -42,22 +42,13 @@ Pages listed to new list below. Most interesting find was /api/reservations did 
 
 
 
-# Alerts
+## Alerts
 - No Anti CSRF Tokens
 - Authentication Request Identified
 - Session Management Response Identified
 - User Agent Fuzzer
 
 ![image](https://github.com/user-attachments/assets/b654b201-246a-4f5a-8ac8-d781c3f7b083)
-
-Check what kind of alerts are found in the version.
-Note
-
-Do a broader test because there are now more pages. Make sure all pages are tested. Check lecture recording
-
-Save the ZAP report in markdown format.
-Fill in the table as the testing progresses.
-The test can find new pages, for example
 
 | **Page / Feature** | **Role** | **Success / Fail** | **Reason of Fail / Outcome** |
 |:----|:----:|:----:|:----:|
@@ -77,6 +68,11 @@ The test can find new pages, for example
 | /api/reservations/id    | Quest | ✅ | Same as Admin |
 | /api/session   | Quest | ❌ | Unauthorized |
 
+# Third testing technique: wfuzz and http
+
+## What kind of pages can be found using common words?
+wfuzz -c -w /usr/share/wordlists/dirb/common.txt --hc 404 http://localhost:8000/FUZZ
+![image](https://github.com/user-attachments/assets/33a421fe-0b7d-4717-8246-7064c1d00c2e)
 
 
 

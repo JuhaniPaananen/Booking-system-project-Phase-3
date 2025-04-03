@@ -36,9 +36,6 @@ Password: quest123
 
 # Second testing technique: ZAP
 
-e8f96fa7-38e3-4ce3-9e8b-af5cbded9cal
-POST: register(birthdate,csrf_token,password,role,username)
-
 
 Check what kind of alerts are found in the version.
 Note

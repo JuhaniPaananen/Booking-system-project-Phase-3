@@ -77,6 +77,9 @@ wfuzz -c -w /usr/share/wordlists/dirb/common.txt --hc 404 http://localhost:8000/
 ### Is there an API folder and pages under it?
 wfuzz -c -w /usr/share/wordlists/dirb/common.txt --hc 404 http://localhost:8000/api/FUZZ
 ![image](https://github.com/user-attachments/assets/440b6b0e-347d-4ea3-94b3-c4f07f29d689)
+Interestingly it does not see, that session is under api. Picture below shows it is under api.
+![image](https://github.com/user-attachments/assets/dad6c91d-105d-491c-9b7f-8db573118580)
+
 
 ### Are there any pages in the reservations folder whose name is a number between 1-1000?
 wfuzz -c -z range,1-1000 --hc 404 http://localhost:8000/api/reservations/FUZZ

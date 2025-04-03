@@ -72,12 +72,18 @@ Pages listed to new list below. Most interesting find was /api/reservations did 
 
 ### What kind of pages can be found using common words?
 wfuzz -c -w /usr/share/wordlists/dirb/common.txt --hc 404 http://localhost:8000/FUZZ
+
 ![image](https://github.com/user-attachments/assets/33a421fe-0b7d-4717-8246-7064c1d00c2e)
+
+It got most pages.
 
 ### Is there an API folder and pages under it?
 wfuzz -c -w /usr/share/wordlists/dirb/common.txt --hc 404 http://localhost:8000/api/FUZZ
+
 ![image](https://github.com/user-attachments/assets/440b6b0e-347d-4ea3-94b3-c4f07f29d689)
+
 Interestingly it does not see, that session is under api. Picture below shows it is under api, but could be that it is not authorized to access it, what is the reason for 401.
+
 ![image](https://github.com/user-attachments/assets/dad6c91d-105d-491c-9b7f-8db573118580)
 
 
@@ -85,9 +91,14 @@ Interestingly it does not see, that session is under api. Picture below shows it
 wfuzz -c -z range,1-1000 --hc 404 http://localhost:8000/api/reservations/FUZZ
 ![image](https://github.com/user-attachments/assets/032b3ede-48ab-46e7-b74f-d4e51f30f973)
 
+This actually explains why i dont get anything using 0 to 2, but 3 and above.
+
 ### When the page is found, then what the page contains?
 http http://localhost:8000/api/reservations/1  
 ![image](https://github.com/user-attachments/assets/1ceb2575-72f8-4791-86ca-becdedd82113)
+
+Yes as expected it does not return it, but I tried to put 3 and it returns the reservation.
+
 http http://localhost:8000/api/reservations/3  
 ![image](https://github.com/user-attachments/assets/d2c294d4-f18d-44aa-8da8-f899b342eecd)
 

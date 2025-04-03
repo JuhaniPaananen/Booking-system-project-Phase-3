@@ -38,7 +38,7 @@ Password: quest123
 
 ## Conclusion
 Found some new pages using manual scan and spider like seen picture under. Also made couple reports, but include only best one.
-Pages listed to new list below. Report contains total of 4 alerts. One is authentication alert, that is made by account I used so it's nothing. Second is session, that is accessable by putting /api/session.
+Pages listed to new list below. Most interesting find was /api/reservations did not work, but if I put /api/reservations/5, then it returns reservation of that id. Turns out 0 to 2 is empty, but starts from id 3. Report contains total of 4 alerts. One is authentication alert, that is made by account I used so it's nothing. Second is session alert, that is accessable by putting /api/session.
 
 
 
@@ -61,8 +61,11 @@ The test can find new pages, for example
 
 | **Page / Feature** | **Role** | **Success / Fail** | **Reason of Fail / Outcome** |
 |:----|:----:|:----:|:----:|
-| /api/resources    | Admin | ✅ | - |
-| /api/resou    | Admin | ✅ | - |
+| /api/resources    | Admin | ✅ | Lists every existing resource with ID, name and description. |
+| /api/resources/id    | Admin | ✅ | Return corresponding resource. |
+| /api/reservations    | Admin | ❌ | Return not, so it does not print every reservation. |
+| /api/reservations/id    | Admin | ✅ | 3 and above returns id, token, resource_id, start time and end time. |
+| /api/resources/id    | Admin | ✅ | Return corresponding resource. |
 
 
 

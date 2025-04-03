@@ -36,6 +36,10 @@ Password: quest123
 
 # Second testing technique: ZAP
 
+## Conclusion
+Found some new pages using manual scan and spider. 
+
+![image](https://github.com/user-attachments/assets/b654b201-246a-4f5a-8ac8-d781c3f7b083)
 
 Check what kind of alerts are found in the version.
 Note

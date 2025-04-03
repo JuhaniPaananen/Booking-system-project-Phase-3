@@ -66,11 +66,11 @@ The test can find new pages, for example
 | /api/reservations    | Admin | ❌ | Return not, so it does not print every reservation. |
 | /api/reservations/id    | Admin | ✅ | 3 and above returns id, token, resource_id, start time and end time. |
 | /api/session   | Admin | ✅ | Returns account and role. |
-| /api/resources    | Reverver |  |  |
-| /api/resources/id    | Reserver |  |  |
-| /api/reservations    | Reserver |  |  |
-| /api/reservations/id    | Reserver |  |  |
-| /api/session   | Reserver |  |  |
+| /api/resources    | Reverver | ✅ | Same as Admin |
+| /api/resources/id    | Reserver | ✅ | Same as Admin |
+| /api/reservations    | Reserver | ❌ | Same as Admin |
+| /api/reservations/id    | Reserver | ✅ | Same as Admin |
+| /api/session   | Reserver | ✅ | Same as Admin |
 
 
 

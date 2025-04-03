@@ -71,6 +71,11 @@ The test can find new pages, for example
 | /api/reservations    | Reserver | ❌ | Same as Admin |
 | /api/reservations/id    | Reserver | ✅ | Same as Admin |
 | /api/session   | Reserver | ✅ | Same as Admin |
+| /api/resources    | Quest | ✅ | Same as Admin |
+| /api/resources/id    | Quest | ❌ | Unauthorized |
+| /api/reservations    | Quest | ❌ | Same as Admin |
+| /api/reservations/id    | Quest | ✅ | Same as Admin |
+| /api/session   | Quest | ❌ | Unauthorized |
 
 
 

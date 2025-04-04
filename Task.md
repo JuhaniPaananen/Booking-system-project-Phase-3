@@ -110,6 +110,8 @@ QUEST IS MISSING FROM FIRST STEP PAGES
 | **Page / Feature** | **Working Roles** |
 |:----|:----:|
 | / (index)    | Quest, Reserver, Admin |
+| /login    | Quest, Reserver, Admin |
+| /register    | Quest, Reserver, Admin |
 | /resources    | Reserver, Admin |
 | /reservation   | Reserver, Admin |
 | /api/resources  | Quest, Reserver, Admin |

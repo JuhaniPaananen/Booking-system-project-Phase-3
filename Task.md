@@ -115,13 +115,10 @@ http http://localhost:8000/api/reservations/3
 | /api/reservations | - |
 | /api/reservations/id  | Quest, Reserver, Admin |
 | /api/session | Reserver, Admin |
-✔️ The first column of the table should contain all the pages found.
-✔️ Functions should be linked to roles.
+
+
 ✔️ Following an iterative approach repeat browser testing.
 
-1. Go through the application and compare the functions with the table
 2. If something needs to be changed in the table, change it.
 
-🎯 Now you should have a table that shows what resources (pages) and functions are in the application and who can use them.
-✅ Add to the table as a note which application specs are met (especially items 1-8).
 

@@ -107,21 +107,14 @@ http http://localhost:8000/api/reservations/3
 ✔️ List of available pages ✔️
 | **Page / Feature** | **Working Roles** |
 |:----|:----:|
-| /api/resources  | Admin |
-| /api/resources/id  | 
-| /api/reservations  |
-| /api/reservations/id  |
-| /api/session |
-| /api/resources  | 
-| /api/resources/id  | 
-| /api/reservations  | 
-| /api/reservations/id  | 
-| /api/session | 
-| /api/resources   | 
-| /api/resources/id    | 
-| /api/reservations    | 
-| /api/reservations/id    | 
-| /api/session   | 
+| / (index)    | Quest, Reserver, Admin |
+| /resources    | Reserver, Admin |
+| /reservation   | Reserver, Admin |
+| /api/resources  | Quest, Reserver, Admin |
+| /api/resources/id  | Admin |
+| /api/reservations | - |
+| /api/reservations/id  | Quest, Reserver, Admin |
+| /api/session | Admin |
 ✔️ The first column of the table should contain all the pages found.
 ✔️ Functions should be linked to roles.
 ✔️ Following an iterative approach repeat browser testing.

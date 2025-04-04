@@ -1,4 +1,4 @@
-### Step were performed in small parts, but whole list of pages is in last part!
+### ⚠️ Step were performed in small parts, but whole list of pages is in last part! ⚠️
 
 # First testing technique: Browser
 

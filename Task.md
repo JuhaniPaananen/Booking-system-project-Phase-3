@@ -104,6 +104,8 @@ http http://localhost:8000/api/reservations/3
 
 # The final step of the test
 
+QUEST IS MISSING FROM FIRST STEP PAGES
+
 ✔️ List of available pages ✔️
 | **Page / Feature** | **Working Roles** |
 |:----|:----:|

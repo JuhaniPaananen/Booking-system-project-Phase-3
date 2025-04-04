@@ -111,10 +111,10 @@ http http://localhost:8000/api/reservations/3
 | /resources    | Reserver, Admin |
 | /reservation   | Reserver, Admin |
 | /api/resources  | Quest, Reserver, Admin |
-| /api/resources/id  | Admin |
+| /api/resources/id  | Reserver, Admin |
 | /api/reservations | - |
 | /api/reservations/id  | Quest, Reserver, Admin |
-| /api/session | Admin |
+| /api/session | Reserver, Admin |
 ✔️ The first column of the table should contain all the pages found.
 ✔️ Functions should be linked to roles.
 ✔️ Following an iterative approach repeat browser testing.

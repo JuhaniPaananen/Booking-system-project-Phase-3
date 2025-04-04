@@ -104,3 +104,32 @@ http http://localhost:8000/api/reservations/3
 
 # The final step of the test
 
+✔️ At this point you should have a comprehensive list of available pages.
+| **Page / Feature** |
+|:----:
+| /api/resources    |
+| /api/resources/id    | 
+| /api/reservations    |
+| /api/reservations/id    |
+| /api/session   |
+| /api/resources    | 
+| /api/resources/id    | 
+| /api/reservations    | 
+| /api/reservations/id    | 
+| /api/session   | 
+| /api/resources    | 
+| /api/resources/id    | 
+| /api/reservations    | 
+| /api/reservations/id    | 
+| /api/session   | 
+✔️ The first column of the table should contain all the pages found.
+✔️ In addition, the pages should already have functions connected to them.
+✔️ Functions should be linked to roles.
+✔️ Following an iterative approach repeat browser testing.
+
+1. Go through the application and compare the functions with the table
+2. If something needs to be changed in the table, change it.
+
+🎯 Now you should have a table that shows what resources (pages) and functions are in the application and who can use them.
+✅ Add to the table as a note which application specs are met (especially items 1-8).
+

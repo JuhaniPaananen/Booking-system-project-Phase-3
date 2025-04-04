@@ -104,26 +104,25 @@ http http://localhost:8000/api/reservations/3
 
 # The final step of the test
 
-✔️ At this point you should have a comprehensive list of available pages.
-| **Page / Feature** |
-|:----:
-| /api/resources    |
-| /api/resources/id    | 
-| /api/reservations    |
-| /api/reservations/id    |
-| /api/session   |
-| /api/resources    | 
-| /api/resources/id    | 
-| /api/reservations    | 
-| /api/reservations/id    | 
-| /api/session   | 
-| /api/resources    | 
+✔️ List of available pages ✔️
+| **Page / Feature** | **Working Roles** |
+|:----|:----:|
+| /api/resources  | Admin |
+| /api/resources/id  | 
+| /api/reservations  |
+| /api/reservations/id  |
+| /api/session |
+| /api/resources  | 
+| /api/resources/id  | 
+| /api/reservations  | 
+| /api/reservations/id  | 
+| /api/session | 
+| /api/resources   | 
 | /api/resources/id    | 
 | /api/reservations    | 
 | /api/reservations/id    | 
 | /api/session   | 
 ✔️ The first column of the table should contain all the pages found.
-✔️ In addition, the pages should already have functions connected to them.
 ✔️ Functions should be linked to roles.
 ✔️ Following an iterative approach repeat browser testing.
 

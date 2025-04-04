@@ -106,8 +106,6 @@ http http://localhost:8000/api/reservations/3
 
 # The final step of the test
 
-QUEST IS MISSING FROM FIRST STEP PAGES
-
 ✔️ List of available pages ✔️
 | **Page / Feature** | **Working Roles** |
 |:----|:----:|
@@ -121,10 +119,5 @@ QUEST IS MISSING FROM FIRST STEP PAGES
 | /api/reservations | - |
 | /api/reservations/id  | Quest, Reserver, Admin |
 | /api/session | Reserver, Admin |
-
-
-✔️ Following an iterative approach repeat browser testing.
-
-2. If something needs to be changed in the table, change it.
 
 
